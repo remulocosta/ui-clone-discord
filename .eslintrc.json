@@ -33,6 +33,7 @@
         "no-alert": "off",
         "no-console": "off",
         "no-underscore-dangle": "off",
+        "no-useless-constructor": "off",
         "prettier/prettier": "error",
         "react/jsx-props-no-spreading": "off",
         "react/prop-types": "off",
@@ -44,7 +45,12 @@
         "import/no-duplicates": "off",
         "class-methods-use-this": "off",
         "@typescript-eslint/camelcase": "off",
-        "no-useless-constructor": "off",
+        "@typescript-eslint/explicit-function-return-type": [
+          "error",
+          {
+            "allowExpressions": true
+          }
+        ],
         "@typescript-eslint/no-unused-vars": [
           "error",
           {

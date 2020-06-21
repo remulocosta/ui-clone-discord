@@ -1,9 +1,14 @@
 import React from 'react';
 
-function App() {
-  return (
-    <h1>Remulo Costa</h1>
-  );
-}
+import Layout from './components/Layout';
+import GlobalStyles from './styles/GlobalStyles';
+
+const App: React.FC = () => (
+  <>
+    <Layout />
+
+    <GlobalStyles />
+  </>
+);
 
 export default App;
