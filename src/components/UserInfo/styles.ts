@@ -28,16 +28,16 @@ export const Avatar = styled.div`
   background-color: var(--gray);
 
   &::after {
-    background-color: var(--notification);
-    width: 12px;
-    height: 12px;
+    background-color: var(--green);
+    width: 10px;
+    height: 10px;
 
     position: absolute;
     bottom: -3px;
     right: -3px;
 
     border-radius: 50%;
-    border: 1px solid var(--quaternary);
+    border: 3px solid var(--quaternary);
 
     text-align: right;
     font-size: 14px;
@@ -45,6 +45,12 @@ export const Avatar = styled.div`
     color: var(--white);
 
     content: '';
+  }
+
+  > img {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
   }
 `;
 

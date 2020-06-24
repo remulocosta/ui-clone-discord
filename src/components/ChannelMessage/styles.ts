@@ -30,6 +30,12 @@ export const Avatar = styled.div`
   &.bot {
     background-color: var(--mention-detail);
   }
+
+  > img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+  }
 `;
 
 export const Message = styled.div`

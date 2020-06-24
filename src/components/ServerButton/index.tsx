@@ -15,6 +15,7 @@ const ServerButton: React.FC<IProps> = ({
   isHome,
   hasNotifications,
   mentions,
+  children,
 }) => {
   return (
     <Button
@@ -22,8 +23,10 @@ const ServerButton: React.FC<IProps> = ({
       hasNotifications={hasNotifications}
       mentions={mentions}
       className={selected ? 'active' : ''}
+      selected={selected}
     >
       {isHome && <img src={Logo} alt="Rocketseat" />}
+      {children}
     </Button>
   );
 };

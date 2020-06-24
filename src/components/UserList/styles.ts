@@ -78,6 +78,7 @@ export const User = styled.div`
 `;
 
 export const Avatar = styled.div`
+  position: relative;
   flex-shrink: 0;
 
   width: 32px;
@@ -85,7 +86,40 @@ export const Avatar = styled.div`
   border-radius: 50%;
   background-color: var(--primary);
 
+  &::after {
+    background-color: var(--green);
+    width: 10px;
+    height: 10px;
+
+    position: absolute;
+    bottom: -3px;
+    right: -3px;
+
+    border-radius: 50%;
+    border: 3px solid var(--quaternary);
+
+    text-align: right;
+    font-size: 14px;
+    font-weight: bold;
+    color: var(--white);
+
+    content: '';
+  }
+
   &.bot {
     background-color: var(--mention-detail);
+    &::after {
+      background-color: var(--notification);
+    }
+
+    & > strong {
+      color: var(--mention-detail) !important;
+    }
+  }
+
+  > img {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
   }
 `;

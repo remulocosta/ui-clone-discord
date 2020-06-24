@@ -1,4 +1,4 @@
-import styled from 'styled-components';
+import styled, { css } from 'styled-components';
 
 import { IProps } from '.';
 
@@ -26,19 +26,46 @@ export const Button = styled.button<IProps>`
   }
 
   &::before {
-    width: 9px;
-    height: 9px;
-
     position: absolute;
-    left: -17px;
-    top: calc(50% - 4.5px);
-
-    background-color: var(--white);
-    border-radius: 50%;
-
+    left: -22px !important;
+    border-radius: 0 4px 4px 0;
     content: '';
-    display: ${(props) => (props.hasNotifications ? 'inline' : 'none')};
+    transition: all 0.1s 0.1s;
   }
+
+
+  ${(props) =>
+    props.selected &&
+    css`
+      &::before {
+        width: 9px;
+        height: 40px !important;
+
+        top: calc(50% - 20px) !important;
+
+        background-color: var(--white);
+        transform: translate(5px, 0px);
+
+        content: '';
+      }
+    `}
+
+  ${(props) =>
+    props.hasNotifications &&
+    css`
+      &::before {
+        width: 9px;
+        height: 9px;
+
+        top: calc(50% - 4.5px);
+
+        background-color: var(--white);
+        border-radius: 50%;
+        transform: translate(5px, 0px);
+
+        content: '';
+      }
+    `}
 
   &::after {
     background-color: var(--notification);
@@ -71,5 +98,26 @@ export const Button = styled.button<IProps>`
     border-radius: 16px;
     background-color: ${(props) =>
       props.isHome ? 'var(--rocketseat)' : 'var(--discord)'};
+
+    &::before {
+        width: 9px;
+        height: 20px;
+
+        top: calc(50% - 10px);
+
+        background-color: var(--white);
+        border-radius: 0 4px 4px 0;
+        transform: translate(5px, 0px);
+
+        content: '';
+      }
+
+      > svg {
+      color: var(--white);
+     }
+  }
+
+  > svg {
+    color: var(--green);
   }
 `;

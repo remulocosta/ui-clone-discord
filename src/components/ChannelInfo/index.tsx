@@ -13,7 +13,7 @@ const ChannelInfo: React.FC = () => {
     <Container>
       <HashtagIcon />
 
-      <Title>Servidor RLA Solutions</Title>
+      <Title>chat-livre</Title>
 
       <Separator />
 

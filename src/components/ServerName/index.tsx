@@ -5,7 +5,7 @@ import { Container, Title, ExpandIcon } from './styles';
 const ServerName: React.FC = () => {
   return (
     <Container>
-      <Title>Servidor RLA Solutions</Title>
+      <Title>Servidor RLA</Title>
 
       <ExpandIcon />
     </Container>

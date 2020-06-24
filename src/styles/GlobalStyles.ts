@@ -37,6 +37,7 @@ export default createGlobalStyle`
 
     --white: #fff;
     --gray: #8a8c90;
+    --green: #43b581;
     --chat-input: rgb(64,68,75);
     --symbol: #74777a;
 
