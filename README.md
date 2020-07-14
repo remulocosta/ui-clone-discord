@@ -31,13 +31,16 @@
 </p>
 
 
-## Aplicação
-
-[Preview da aplicação no netlify](https://uiclonediscord-remulo.netlify.app)
-
 ## Discord
 
 [Discord](https://discord.com/) é um aplicativo de voz sobre IP proprietário e gratuito, projetado para comunidades de jogos. O aplicativo Discord está disponível para os sistemas operacionais Microsoft Windows, macOS, Android, iOS, Linux e em navegadores da Web. Em dezembro de 2016, os desenvolvedores anunciaram que Discord tinha mais de 25 milhões de usuários. [Fonte wikipedia](https://pt.wikipedia.org/wiki/Discord)
+
+---
+
+Preview da aplicação feito deploy no [netlify](https://uiclonediscord-remulo.netlify.app) "https://uiclonediscord-remulo.netlify.app"
+
+
+Este projeto foi iniciado com o [Create React App](https://github.com/facebook/create-react-app).
 
 ## Bibliotecas e tecnologias
 
@@ -54,9 +57,22 @@
 ## Instalação
 
 1. Instale o [Node.js](https://nodejs.org/en/) e o [Yarn](https://yarnpkg.com/).
-1. Clone o projeto executando este comando: `git clone https://github.com/remulocosta/ui-clone-discord.git`
-1. Vá para a pasta do projeto e execute `yarn install` para instalar dependências.
-1. Execute `yarn start`
+
+```bash
+# Clone este repositório
+$ git clone https://github.com/remulocosta/ui-clone-discord.git
+
+# Vá para o repositório
+$ cd ui-clone-discord
+
+# Instalar dependências
+yarn install
+
+# No diretório do projeto, você pode executar a aplicação:
+$ yarn start
+```
+Executa o aplicativo no modo de desenvolvimento.<br />
+Abra [http://localhost:3000](http://localhost:3000) para visualizá-lo no navegador.
 
 ## :memo: License
 
@@ -64,4 +80,4 @@ This project uses the MIT license. Read [LICENSE](LICENSE.md) for details.
 
 ---
 
-Made with ♥ by Remulo Costa :wave:
+Feito com ♥ por Remulo Costa 👋 Entrar em [contato](https://www.linkedin.com/in/remulocosta/)!
