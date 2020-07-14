@@ -30,6 +30,11 @@
   <img alt="Frontend" src=".github/ui-clone-discord-desktop.gif" width="70%">
 </p>
 
+
+## Aplicação
+
+[Preview da aplicação no netlify](https://uiclonediscord-remulo.netlify.app)
+
 ## Discord
 
 [Discord](https://discord.com/) é um aplicativo de voz sobre IP proprietário e gratuito, projetado para comunidades de jogos. O aplicativo Discord está disponível para os sistemas operacionais Microsoft Windows, macOS, Android, iOS, Linux e em navegadores da Web. Em dezembro de 2016, os desenvolvedores anunciaram que Discord tinha mais de 25 milhões de usuários. [Fonte wikipedia](https://pt.wikipedia.org/wiki/Discord)
